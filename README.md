@@ -12,7 +12,7 @@ The first column contains the key which is always a 36-character UUID. A single 
 
 In addition to implementing the server, provide an example how a client can request data from the server. The client will provide only a key, e.g. `f8a24bb8-eff8-41dc-929b-10b4c3e49e05`, and the server needs to provide the corresponding value in the response, in this case, `1234`.
 
-You can implement the server and the example client as you see fit. **Important:**, you should be able to explain how your system works in detail and answer follow up questions like these:
+You can implement the server and the example client as you see fit. **Important:** you should be able to explain how your system works in detail and answer follow up questions like these:
 
  - How much data can your server handle? How could you improve it so it can handle even larger datasets?
  - How many milliseconds it takes for the client to get a response on average? How could you improve the latency?
