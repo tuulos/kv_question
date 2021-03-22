@@ -1,6 +1,6 @@
 # kv_question
 
-Your job is to build a simple key-value server. To make the task easier, the server only serves **read-only** data that is provided in a separate file. The data doesn't need to be mutated in any way by the server. Clients need to be able to contact the server over network (you can choose the protocol), send a query containing a key, and the server will answer with a corresponding value from the dataset, if the key exists.
+Your job is to build a simple key-value server. To make the task easier, the server only serves **read-only** data that is provided in a separate file. The data doesn't need to be mutated in any way by the server. Clients need to be able to contact the server over network (you can choose the protocol), send a query containing a key, and the server will answer with the corresponding value from the dataset, if the given key exists.
 
 The key-value data is provided in the following format:
 ```
@@ -8,7 +8,7 @@ The key-value data is provided in the following format:
 f8a24bb8-eff8-41dc-929b-10b4c3e49e05 1234
 0cdfafb5-edb4-48a6-a7ec-5b1a75831f91 here is another value
 ```
-The first column contains the key which is always a 36-character UUID. A single space chacterter separates the key from the value that is the rest of the line until a newline (`\n`) character. You can use an example data file stored in this repository, `example.data`, for testing.
+The first column contains the key which is always a valid [UUID (version 4)](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)). A single space chacterter separates the key from the value that is the rest of the line until a newline (`\n`) character. You can use an example data file stored in this repository, `example.data`, for testing.
 
 In addition to implementing the server, provide an example how a client can request data from the server. The client will provide only a key, e.g. `f8a24bb8-eff8-41dc-929b-10b4c3e49e05`, and the server needs to provide the corresponding value in the response, in this case, `1234`.
 
