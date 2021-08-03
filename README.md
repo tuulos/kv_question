@@ -20,4 +20,6 @@ You can implement the server and the example client as you see fit. **Important:
 
 Note that while you are allowed to use external libraries as a part of your solution, you should be prepared to explain in detail how these libraries work internally. If you are unsure about their internals, it is better to avoid using them and go with a simpler, more understandable approach instead.
 
-Providing a simple solution for this question shouldn't take more than 1-2 hours of your time. Rather than spending more time in improving your solution, be prepared to have a deep technical discussion about possible improvements and their relative pros and cons.
+Also, while we care about latency and performance, this is not about creating fastest implementation in terms of absolute milliseconds and requests per second. It is perfectly okay to use a high level language like Python; this is not a language benchmark.
+
+Please don't spend more than 1-2 hours of your time. Rather than spending more time in improving your solution, be prepared to have a deep technical discussion about possible improvements and their relative pros and cons.
